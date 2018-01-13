@@ -1,14 +1,16 @@
-<p id="notice"><%= notice %></p>
+<h1><%= @user.first_name %> <%= @user.last_name %></h1>
 
-<p>
-  <strong>First name:</strong>
-  <%= @user.first_name %>
-</p>
+<div class="row">
+  <div class="col-md-3">
+    <% OnlineCourse::Area.all.each do |area| %>
+      <p><%= link_to area.name, online_course.area_path(area), remote: true %></p>
+    <% end %>
+  </div>
+  <div class="col-md-9">
+    <div id="course-content">The course will appear here!</div>
+  </div>
+</div>
 
-<p>
-  <strong>Last name:</strong>
-  <%= @user.last_name %>
-</p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

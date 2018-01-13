@@ -1,14 +1,18 @@
-<p id="notice"><%= notice %></p>
+<h1><%= @topic.name %></h1>
 
-<p>
-  <strong>Name:</strong>
-  <%= @topic.name %>
-</p>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><%= link_to @topic.subject.area.name, @topic.subject.area %></li>
+    <li class="breadcrumb-item"><%= link_to @topic.subject.name, @topic.subject %></li>
+    <li class="breadcrumb-item active" aria-current="page"><%= @topic.name %></li>
+  </ol>
+</nav>
 
-<p>
-  <strong>Subject:</strong>
-  <%= @topic.subject %>
-</p>
-
-<%= link_to 'Edit', edit_topic_path(@topic) %> |
-<%= link_to 'Back', topics_path %>
+<div class="row justify-content-md-end">
+  <div class="col-md-6">
+    <%= raw @topic.content %>
+  </div>
+  <div class="col-md-3">
+    <%= link_to "Edit", edit_topic_path(@topic), class: "btn btn-outline-primary btn-block" %>
+  </div>
+</div>

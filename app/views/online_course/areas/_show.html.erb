@@ -1,0 +1,7 @@
+<div id="course-content">
+
+  <% @area.subjects.each do |subject| %>
+    <p class="subject-item"><%= link_to subject.name, subject, remote: true %></p>
+  <% end %>
+
+</div>

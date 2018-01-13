@@ -1,6 +1,15 @@
 <h1>Editing Subject</h1>
 
-<%= render 'form', subject: @subject %>
+<%= simple_form_for @subject do |f| %>
+
+  <div class="field">
+    <%= f.input :name, id: :subject_name %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
 
 <%= link_to 'Show', @subject %> |
 <%= link_to 'Back', subjects_path %>

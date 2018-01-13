@@ -1,0 +1,7 @@
+<div id="course-content">
+
+  <% @subject.topics.each do |topic| %>
+    <p class="topic-item"><%= link_to topic.name, topic, remote: true %></p>
+  <% end %>
+
+</div>

@@ -1,0 +1,15 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><%= link_to @topic.subject.area.name, @topic.subject.area, remote: true %></li>
+    <li class="breadcrumb-item"><%= link_to @topic.subject.name, @topic.subject, remote: true %></li>
+    <li class="breadcrumb-item active" aria-current="page"><%= @topic.name %></li>
+  </ol>
+</nav>
+
+<h1><%= @topic.name %></h1>
+
+<div class="row justify-content-md-center">
+  <div class="col-md-6">
+    <%= raw @topic.content %>
+  </div>
+</div>
