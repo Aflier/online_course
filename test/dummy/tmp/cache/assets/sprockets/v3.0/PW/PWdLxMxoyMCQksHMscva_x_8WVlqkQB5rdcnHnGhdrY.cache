@@ -1,0 +1,9 @@
+I"Ê(function() {
+  document.addEventListener('turbolinks:load', function() {
+    return $('[data-provider="summernote"]').each(function() {
+      return $(this).summernote();
+    });
+  });
+
+}).call(this);
+:ET

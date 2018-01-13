@@ -1,0 +1,10 @@
+<%= simple_form_for [@area, @area.subjects.build] do |f| %>
+
+  <div class="field">
+    <%= f.input :name, id: :subject_name %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

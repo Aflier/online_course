@@ -14,3 +14,12 @@ gemspec
 # gem 'byebug', group: [:development, :test]
 
 gem 'sqlite3'
+gem 'bootstrap', '~> 4.0.0.beta3'
+gem 'simple_form'
+gem 'jquery-rails'
+gem 'turbolinks', '~> 5'
+gem 'jquery-turbolinks'
+gem 'summernote-rails', '0.8.3.0'
+gem 'coffee-rails', '~> 4.2'
+gem "autoprefixer-rails"
+gem "font-awesome-rails"

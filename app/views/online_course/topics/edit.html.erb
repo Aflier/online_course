@@ -1,0 +1,14 @@
+<h1>Editing Topic</h1>
+
+<div class="row justify-content-md-center">
+  <div class="col-md-6">
+    <%= simple_form_for @topic do |f| %>
+      <%= f.input :name %>
+      <%= f.input :content, as: :summernote %>
+      <%= f.button :submit %>
+    <% end %>
+  </div>
+</div>
+
+<%= link_to 'Show', @topic %> |
+<%= link_to 'Back', topics_path %>
