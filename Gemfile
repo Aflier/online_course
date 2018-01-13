@@ -13,7 +13,7 @@ gemspec
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
 
-gem 'sqlite3'
+# gem 'sqlite3'
 gem 'bootstrap', '~> 4.0.0.beta3'
 gem 'simple_form'
 gem 'jquery-rails'
