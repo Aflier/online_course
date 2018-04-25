@@ -14,7 +14,7 @@ gemspec
 # gem 'byebug', group: [:development, :test]
 
 gem 'sqlite3'
-gem 'bootstrap', '~> 4.0.0.beta3'
+gem 'bootstrap', '~> 4.1.0'
 gem 'simple_form'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
